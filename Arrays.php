@@ -41,17 +41,6 @@
     ?>
 
     <br>
-    <h1>Ejercicio 4</h1>
-    <?php
-        $datos = array("nombre" => "Sara", "apellido" => "Martinez", "edad" => 24, "ciudad" => "bcn");
-
-        foreach ($datos as $value) {
-            echo var_dump($datos);
-            break;
-        }
-    ?>
-
-    <br>
     <h1>Ejercicio 5</h1>
     <?php
     $letters = "a,b,c,d,e,f";
@@ -94,7 +83,6 @@
     <?php
         $datos = array("Miguel" =>  5, "Luis" => 7, "Marta" => 10, "Isable" => 8, "Aitor" => 4, "Pepe" => 1);
         $alta = 0;
-        $estudiante;
         foreach ($datos as $key => $value) {
             # code...
             if($alta < $value){
