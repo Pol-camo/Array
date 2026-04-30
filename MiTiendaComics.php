@@ -28,6 +28,21 @@ function mostrarComicsEnTabla()
     echo '<table border="1">';
     echo '<tr><th>Categoría</th><th>Título</th><th>Editorial</th><th>Autor</th><th>Idioma</th><th>Precio</th><th>Stock</th></tr>';
 
+    foreach ($inventario as $categoria => $comics) {
+        foreach ($comics as $comic) {
+            echo '<tr>';
+            echo "<td>$categoria</td>";
+            echo "<td>{$comic['titulo']}</td>";
+            echo "<td>{$comic['editorial']}</td>";
+            echo "<td>{$comic['autor']}</td>";
+            echo "<td>{$comic['idioma']}</td>";
+            echo "<td>{$comic['precio']}</td>";
+            echo "<td>{$comic['stock']}</td>";
+            echo '</tr>';
+             
+        }
+    }
+    echo '</table>';
 }
 
 function mostrarValorAlmacen()

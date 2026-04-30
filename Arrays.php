@@ -19,6 +19,15 @@
     ?>
 
     <br>
+    <h1>Ejercicio 2</h1>
+    <?php
+        $datos = array("nombre" => "Sara", "apellido" => "Martinez", "edad" => 23, "ciudad" => "bcn");
+        foreach ($datos as $key => $value) {
+            echo $key . ": " . $value ."<br>";
+        }
+    ?>
+
+    <br>
     <h1>Ejercicio 3</h1>
     <?php
         $datos = array("nombre" => "Sara", "apellido" => "Martinez", "edad" => 24, "ciudad" => "bcn");
@@ -81,6 +90,8 @@
                 $estudiante = $key;
             }
         }
+        echo "La nota mas alta es: " . $alta . " y el mejor alumno es: " . $estudiante;
+
     ?>
 
 
